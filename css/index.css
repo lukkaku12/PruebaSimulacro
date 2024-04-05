@@ -1,0 +1,360 @@
+:root {
+    --fuentePrincipal: 'Open sans';
+    --logotipo: 'Chewy';
+ } /*vamos a declarar variables para hacer mas intuitivo el codigo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1,h2,h3,h4,button {
+    font-family: 'Open sans';
+}
+
+p {
+    font-family: var(--fuentePrincipal);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 60%);
+    width: 100%;
+    height: 5vw;
+    font-size: 30px;
+    
+}
+
+
+.logotipo > img {
+    height: 60px;
+    object-fit: cover;
+    
+
+}
+
+.imgUno {
+    height: 40px;
+    box-sizing: border-box;
+    align-self: center;
+    margin: 0 2px;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: var(--logotipo) !important; 
+    color: white;
+    margin-left: 100px;
+    
+}
+
+.logotipo h6 {
+    font-size: 40px;
+}
+
+.imagen-bg {
+    background-image: url(../images/Mis\ viajes\ \(4\).png);
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+div.imagenes {
+    display: flex;
+    margin-right: 190px;
+    align-items: center;
+}
+
+.parejita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    gap: 45px;
+    
+}
+
+.img1, .img2 {
+    height: 26px;
+}
+
+.viajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px;
+    
+}
+
+.grid-viajes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr)  ;
+    gap: 10px;
+    
+}
+
+
+.Magdalena {
+    grid-column: 1;
+    grid-row: 1/ span 6;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.Antioquia {
+    grid-column: 2;
+    grid-row: 1 / span 5;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.Amazonas {
+    grid-column: 3/ span 4;
+    grid-row: 1 / span 5;
+    width: 97.50%;
+    height: 100%;
+
+
+}
+
+.Santander {
+    grid-row: 7/span 12;
+    grid-column: 1/ span 1;
+    width: 100%;
+    height: 98%;
+
+
+}
+
+.Arauca {
+    grid-column: 2/ span 4;
+    grid-row: 6/span 12;
+    width: 100%;
+    height: 100%;
+
+}
+
+.viaje {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.viaje p {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 60%);
+    bottom: 0;
+    display: flex;
+    color: white;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.viaje img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section2 {
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+.articulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #79FF39;
+    padding: 20px 10px;
+    margin-top: 30px;
+
+}
+
+.minicontenedor-articulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.minidiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.minidiv > span {
+    border: 1px solid #FF39BE;
+    padding: 3px;
+    border-radius: 10px;
+    color: #FF39BE;
+}
+.articulo > img {
+    height: 150px;
+}
+
+h4 {
+    color: #FFC639;
+    font-size:large;
+}
+
+.leer-mas {
+    align-self: flex-end;
+    color: #526DFF;
+    margin-top: 15px;
+}
+
+.parte-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+
+
+.parte-izquierda img {
+    width: 260px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+table, tr, td {
+    border-collapse: collapse;
+    border: 1px solid #526DFF;
+    color: #526DFF;
+    padding: 5px;
+}
+
+
+/* parte derecha de la segunda sección */
+
+
+.parte-derecha {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.parte-derecha img {
+width: 100%;
+object-fit: cover;
+object-position:center ;
+}
+
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobremi h3 {
+    align-self: flex-start;
+}
+
+.sobremi img {
+    width: 100%;
+}
+
+.comentarios-recientes {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.comentarios-recientes img {
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.comentario1, .comentario2, .comentario3 {
+    display: flex;
+    justify-content:space-between ;
+    gap: 10px;
+    margin: 15px 5px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    justify-content: end;
+    padding-right: 190px;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    height: 30vh;
+    justify-content: center;
+    
+}
+
+footer .formulario {
+    display: flex;
+    margin: 10px 0;
+    
+    
+}
+
+.formulario input[type="text"] {
+    padding: 5px;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 4px 0 0 4px;
+    font-family: var(--fuentePrincipal);
+    
+}
+
+
+.formulario input[type="submit"] {
+    padding: 9px;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 0;
+    background-color:rgb(67, 81, 82);
+    color: white;
+    font-family: var(--fuentePrincipal);
+    border-left: 0;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.redes img {
+    height: 40px;
+}
