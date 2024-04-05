@@ -197,6 +197,10 @@ div.imagenes {
     
 }
 
+.minicontenedor-articulo p {
+color: gray;
+}
+
 .minidiv {
     display: flex;
     flex-direction: row;
@@ -222,8 +226,11 @@ h4 {
 
 .leer-mas {
     align-self: flex-end;
-    color: #526DFF;
     margin-top: 15px;
+}
+
+.leer-mas p {
+color: #526DFF;
 }
 
 .parte-izquierda {
@@ -272,6 +279,7 @@ object-position:center ;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    color: gray;
 }
 
 .sobremi h3 {
@@ -286,6 +294,7 @@ object-position:center ;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    color: gray;
 
 }
 
